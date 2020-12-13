@@ -1,0 +1,35 @@
+{
+  "name": "tcc-theme-ideas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/shared/*"
+    ],
+    "nohoist": [
+      "**/jest",
+      "**/ts-jest",
+      "**/typeorm/**",
+      "**/typeorm",
+      "**/*react-native*",
+      "**/*react-native*/**",
+      "**/@react-navigation/**",
+      "**/@react-navigation",
+      "**/axios/**",
+      "**/axios",
+      "**/@unform/mobile/**",
+      "**/@unform/mobile",
+      "**/yup/**",
+      "**/yup",
+      "**/styled-components/**",
+      "**/styled-components"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.1.2",
+    "@tcc-theme-ideas/eslint-config": "*"
+  }
+}
